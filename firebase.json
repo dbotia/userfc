@@ -1,0 +1,14 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": "public",
+
+    // Add the following rewrites section *within* "hosting"
+    "rewrites": [ {
+      "source": "/api/**", 
+      "function": "api"
+    }]
+  }
+}
